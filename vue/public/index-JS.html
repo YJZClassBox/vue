@@ -19,7 +19,8 @@
 <!-- end banner js -->
 <link rel="stylesheet" href="css/sxg.css">
 <script src="Script/jquery.js"></script>
-<script src="Script/global.js"></script>
+<!--<script src="Script/global.js"></script>
+
 <!--修订功能js错误 重置模块功能：下拉菜单隐藏、头部幻灯片， 修改时间2014年5月20日11:11:17 修改员：huang-->
 <script type="text/javascript">
 $(function() {
@@ -35,30 +36,13 @@ $(function() {
 	});
 });
 </script>
-<script type="text/javascript">
-function mOver()
-{
-document.getElementById("caier").style.display="block";
-}
-
-function mOut()
-{
-document.getElementById("caier").style.display="none";
-}
-</script>
-<!-- end 修改完毕-->
+<!-- end 修改完毕---------------------------------------------------------------------------------------------->
 </head>
 <body>
 <!-- Begin header -->
 <div id="member_info2"></div>
 <div class="head">
 	<div class="r1 w1225">
-    <div class="le">
-        <a href="#" rel="nofollow" class="ico c__sina" title="新浪微博" target="_blank"><img src="css/images/weibo1.png" /></a>
-        <a href="javascript:;" rel="nofollow" class="ico c__dimension" onMouseOver="mOver()" onMouseOut="mOut()"><img src="css/images/weixin2.png" /></a>
-        <span class="tFav"><a href="javascript:;" rel="nofollow" onclick="AddFavorite(window.location,document.title);" class="f12 c666">收藏</a></span>
-        <div id="caier" style=" display:none; width:200px; height:200px;"><img src="css/images/api.png" style="width:100%; height:100%" /></div>
-    </div>
   <div class="ri">
             <span class="tLnk2"><a href=""  >购物车</a></span>
             <span class="tLnk1"><a href="" class="f12">登录</a> <a href="" class="f12">注册</a></span>
@@ -83,18 +67,15 @@ document.getElementById("caier").style.display="none";
 <div class="r3 w1225" style="position:relative">
 <div class="gSort" id="pop_menu">
 
-	
-<!--    <span class="tit" id="pop_gMenu">
-    	<b class="ico c__category"></b>
-        腕表分类
-    </span>-->
+
+	<!-- 修改后导航开始---------------------------------------------------------------------------------------------->
     <ul id="dropdown_nav">
 			<li>
-				<a class="sub_link" href="#">腕表分类</a>
+				<a class="sub_link" href="#">腕表分类<img src="css/images/x_icon.png" /></a>
            
 			<div class="sub_nav">
 			<dl>
-            <dt style="position:absolute;">手表品牌</dt>
+            <dt class="sub_ie">手表品牌</dt>
             <dd>
                                     <a   href="">劳力士</a>
                                     <a   href="">欧米茄</a>
@@ -139,18 +120,12 @@ document.getElementById("caier").style.display="none";
                 <a href="" title="运动手表">收藏</a>
             </dd>
         </dl>
-        <dl>
-            <dt>新品上市</dt>
-            <dd>
-                        <a href="" title="送母亲手表">送母亲</a>
-                        <a href="" title="送老婆手表">送老婆</a>
-                        <a href="" title="送女友手表">送女友</a>
-                  <a href="" title="送闺蜜手表">送闺蜜</a>
-            </dd>
-        </dl>
 				</div>
 			</li>
-		</ul>
+		</ul><!-- 修改后导航结束---------------------------------------------------------------------------------------------->
+        
+        
+        
 </div>
 <!-- end pop_menu-->
 <!--end gMune 修改2014-5-19 15:15:00 修改员——huang-->
@@ -170,9 +145,8 @@ document.getElementById("caier").style.display="none";
 
 <!-- End header -->
 <link rel="stylesheet" href="css/index.css" type="text/css" media="screen, projection" />
-<!--<script type="text/javascript" src="Script/index.js"></script>-->
 
-<!--index banner start-->
+<!--index banner start  ---------------------------------------------------------------------------------------------->
 <div class="banner" id="banner" >
 	<a href="#" class="d1" style="background:url(Images/banner2.jpg) center no-repeat;"></a>
 	<a href="#" class="d1" style="background:url(Images/banner1.jpg) center no-repeat;"></a>
@@ -188,7 +162,7 @@ document.getElementById("caier").style.display="none";
 	</div>
 </div>
 <script type="text/javascript">banner()</script>
-<!--index banner end-->
+<!--index banner end----------------------------------------------------------------------------------------------------->
 
 <div class="idxBnd">
   <div class="tCnt w1225">
@@ -629,7 +603,7 @@ document.getElementById("caier").style.display="none";
     </div>
 </div><!-- End footer -->
 
-<!--back top -->
+<!--back top ---------------------------------------------------------------------------------------------->
 <div id="top_item">
         <a id="back_top" onclick="return false;" title="回到顶部"></a>
 </div>
@@ -647,6 +621,6 @@ $(function() {
 		$("html,body").animate({scrollTop: 0}, 500);	
 	});		
 });
-</script><!--back top -->
+</script><!--back top ---------------------------------------------------------------------------------->
 </body>
 </html>
